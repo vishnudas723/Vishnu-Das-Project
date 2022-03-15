@@ -1,0 +1,37 @@
+*{
+    
+    margin: 0;
+    padding: 0; 
+
+    }
+    #cover {
+        background-image: url(./Images/bg11.jpg);
+        background-size: cover;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        padding-top: 5%;
+    }
+    .copyright {
+        
+        color: black;
+        line-height: 20px;
+        font-size: 1em;
+        margin-left: 50%;
+    }
+.col-lg-4{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    text-align: left;
+        background: rgb(141, 100, 237);
+}
+.row g-3{
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,30 @@
+*{
+    
+    margin: 0;
+    padding: 0; 
+
+    }
+.mymargin{
+    
+    margin: 25px;
+    height: 25px;
+     
+}
+.desc{
+    padding-top: 33%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #333333;
+}
+
+.copyright {
+    color: #fff;
+    line-height: 40px;
+    font-size: 0.7em;
+    margin-left: 50%;
+}
+
