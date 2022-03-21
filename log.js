@@ -45,7 +45,7 @@ function checkPassword(str)
         return true;
     }
     else{
-        error1.innerHTML = "Invalid Password";
+        error1.innerHTML = "Password Must contain atleast one Uppercase and Lowercase Character";
         error1.style.color ="red";
         return false;  
     }
