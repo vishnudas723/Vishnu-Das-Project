@@ -17,17 +17,19 @@ let password = document.getElementById("exampleInputPassword1");
 let error1 = document.getElementById("passerror");
 
 function validate() {
-    var newPassword = document.getElementById('exampleInputPassword1').newPassword.value;
-    var minNumberofChars = 8;
-    var maxNumberofChars = 16;
-    var regularExpression  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/;
-    alert(newPassword); 
-    if(newPassword.length < minNumberofChars || newPassword.length > maxNumberofChars || newPassword == null){
-        return false;
+    let minNumberofChars = 8;
+    let maxNumberofChars = 16;
+    let regexp  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/
+    if(minNumberofChars<8){
+        error.innerHTML = "Valid";
+        error.style.color ="Blue";
+        return true;
     }
-    if(!regularExpression.test(newPassword)) {
-        alert("password should contain atleast one number and one special character");
-        return false;
+    else{
+        error.innerHTML = "Invalid Password";
+        error.style.color ="red";
+        return false;  
     }
+
 }
 
