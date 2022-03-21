@@ -8,9 +8,9 @@ let error1 = document.getElementById("passerror");
     let maxNumberofChars = 16;
     var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
     if(regexp.test(email.value)){
-        error.innerHTML = "Invalid Email ID";
-        error.style.color ="red";
-        return false;
+        error.innerHTML = "Valid";
+        error.style.color ="Blue";
+        return true;
     }
     else if(minNumberofChars<8 || maxNumberofChars>16 && regexp.test(password.value)){
         error1.innerHTML = "Invalid Password characters";
@@ -20,9 +20,10 @@ let error1 = document.getElementById("passerror");
 else
 
     {
-        error.innerHTML = "Valid";
-        error.style.color ="Blue";
-        return true;
+        error.innerHTML = "Invalid Email ID";
+        error.style.color ="red";
+        return false;
+        
     }
         
     }
