@@ -30,7 +30,7 @@
 <!--End of Navigation Bars -->
 <div>
 <section id="cover" class="min-vh-100">
-<form action="index.html" class="Login" onsubmit="return validate()">
+<form action="index.html" class="Login">
   <div class="mb-3">
     <h2>
       Login Credentials
@@ -46,12 +46,11 @@
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
     <label for="error1" id="passerror"></label>
   </div>
-  <button type="login" class="btn btn-primary">Log In</button>
+  <button type="login" class="btn btn-primary" onsubmit="return validate()">Log In</button>
   <br>
   <div class="New Acc">
     <h5>Need an Account?</h5>  
     <a href="SignUp.html">SignUp</a>
-
 </form>
 </section>
     </header>
