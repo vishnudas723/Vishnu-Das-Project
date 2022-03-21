@@ -21,13 +21,13 @@ function validate() {
     let maxNumberofChars = 16;
     let regexp  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/
     if(minNumberofChars<8){
-        error.innerHTML = "Valid";
-        error.style.color ="Blue";
+        error1.innerHTML = "Valid";
+        error1.style.color ="Blue";
         return true;
     }
     else{
-        error.innerHTML = "Invalid Password";
-        error.style.color ="red";
+        error1.innerHTML = "Invalid Password";
+        error1.style.color ="red";
         return false;  
     }
 
