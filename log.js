@@ -13,6 +13,21 @@ function validate(){
         return false;
     }
 }
+let password = document.getElementById("exampleInputPassword1");
+let error = document.getElementById("passerror");
 
-
+function validatePassword() {
+    var newPassword = document.getElementById('exampleInputPassword1').newPassword.value;
+    var minNumberofChars = 8;
+    var maxNumberofChars = 16;
+    var regularExpression  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+    alert(newPassword); 
+    if(newPassword.length < minNumberofChars || newPassword.length > maxNumberofChars){
+        return false;
+    }
+    if(!regularExpression.test(newPassword)) {
+        alert("password should contain atleast one number and one special character");
+        return false;
+    }
+}
 
