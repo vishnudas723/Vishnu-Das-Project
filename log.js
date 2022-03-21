@@ -28,7 +28,7 @@ function validate(inputtxt) {
         return true;
            }
     else{
-        error1.innerHTML = "Password Must contain atleast one Uppercase and Lowercase Character and minimum of 8 and max 8 characters";
+        error1.innerHTML = "Invalid Password characters";
         error1.style.color ="red";
         return false; 
         
