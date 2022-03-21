@@ -21,34 +21,41 @@ function validate() {
     let maxNumberofChars = 16;
     //let regexp1  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/
     //str.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/)
+    var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
     if(minNumberofChars<8 || maxNumberofChars>16){
+        error1.innerHTML = "Invalid Password";
+        error1.style.color ="red";
+        return false; 
+    }
+    else if(re.test(password.value)){
+        error1.innerHTML = "Password Must contain atleast one Uppercase and Lowercase Character";
+    error1.style.color ="red";
+   return false; 
+        
+    }
+    else {
         error1.innerHTML = "Valid";
         error1.style.color ="Blue";
         return true;
-    }
-    else{
-        error1.innerHTML = "Invalid Password";
-        error1.style.color ="red";
-        return false;  
     }
 
 }
-function checkPassword(str)
-  {
+//function checkPassword(str)
+ // {
     // at least one number, one lowercase and one uppercase letter
     // at least six characters
-    var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+  //  var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
     //return re.test(str);
-    if(re.test(str)){
-        error1.innerHTML = "Valid";
-        error1.style.color ="Blue";
-        return true;
-    }
-    else{
-        error1.innerHTML = "Password Must contain atleast one Uppercase and Lowercase Character";
-        error1.style.color ="red";
-        return false;  
-    }
-    }
-  
+   // if(re.test(str)){
+   //     error1.innerHTML = "Valid";
+   //     error1.style.color ="Blue";
+   //     return true;
+   // }
+ //   else{
+ //       error1.innerHTML = "Password Must contain atleast one Uppercase and Lowercase Character";
+   //     error1.style.color ="red";
+   //     return false;  
+  //  }
+ //   }
+  //
 
