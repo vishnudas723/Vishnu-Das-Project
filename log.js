@@ -19,8 +19,8 @@ let error1 = document.getElementById("passerror");
 function validate() {
     let minNumberofChars = 8;
     let maxNumberofChars = 16;
-    let regexp  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/
-    if(minNumberofChars<8){
+    let regexp1  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/
+    if(minNumberofChars<8 || maxNumberofChars>16 || regexp1.test(password.value)){
         error1.innerHTML = "Valid";
         error1.style.color ="Blue";
         return true;
