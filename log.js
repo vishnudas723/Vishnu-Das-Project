@@ -16,7 +16,7 @@ function validate(){
 let password = document.getElementById("exampleInputPassword1");
 let error1 = document.getElementById("passerror");
 
-function validatePassword() {
+function validate() {
     var newPassword = document.getElementById('exampleInputPassword1').newPassword.value;
     var minNumberofChars = 8;
     var maxNumberofChars = 16;
