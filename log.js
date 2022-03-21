@@ -14,7 +14,7 @@ function validate(){
     }
 }
 let password = document.getElementById("exampleInputPassword1");
-let error = document.getElementById("passerror");
+let error1 = document.getElementById("passerror");
 
 function validatePassword() {
     var newPassword = document.getElementById('exampleInputPassword1').newPassword.value;
