@@ -22,7 +22,7 @@ function validate() {
     var maxNumberofChars = 16;
     var regularExpression  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/;
     alert(newPassword); 
-    if(newPassword.length < minNumberofChars || newPassword.length > maxNumberofChars){
+    if(newPassword.length < minNumberofChars || newPassword.length > maxNumberofChars || newPassword == null){
         return false;
     }
     if(!regularExpression.test(newPassword)) {
