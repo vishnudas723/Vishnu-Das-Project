@@ -1,4 +1,4 @@
-function phonenumber(inputtxt)
+function validate(inputtxt)
 {
   var phoneno = /^\d{10}$/;
   if(inputtxt.value.match(phoneno))
