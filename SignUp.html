@@ -51,8 +51,11 @@
       <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
     </div>
     <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="Phone" placeholder="Enter Your Phone Number" name="phone"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      required>
+      <small>Format: 123-456-7890</small>
     </div>
     <div class="col-md-6">
       <label for="inputCity" class="form-label">City</label>
