@@ -37,7 +37,8 @@
 <!--SignUp Form -->
 <section id="cover" class="min-vh-100">
 <div class="col-lg-4">
-<form class="row g-3">
+<!..<form class="row g-3">..>
+  <form action="index.html" class="row g-3" onsubmit="return validate()">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Email</label>
       <input type="email" class="form-control" id="inputEmail4">
@@ -52,11 +53,8 @@
     </div>
     <div class="col-12">
       <label for="phone" class="form-label">Phone Number</label>
-      <input type="tel" class="form-control" id="Phone" placeholder="Enter Your Phone Number" name="phone"
-      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-      required>
-      <small>Format: 123-456-7890</small>
-    </div>
+      <input type="tel" class="form-control" id="Phone" placeholder="Enter Your Phone Number">
+          </div>
     <div class="col-md-6">
       <label for="inputCity" class="form-label">City</label>
       <input type="text" class="form-control" id="inputCity">
