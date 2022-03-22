@@ -23,12 +23,7 @@ function validate(){
         return false; 
         
     }
-    else{
-        error1.innerHTML = "Invalid Password characters";
-        error1.style.color ="red";
-        return false; 
-        
-    }
+   
 }
 
 /*let password = document.getElementById("exampleInputPassword1");
