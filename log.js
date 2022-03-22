@@ -23,6 +23,7 @@ var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 if(minNumberofChars<8 || maxNumberofChars>16 && regexp.test(password.value)){
     error1.innerHTML = "Valid";
     error1.style.color ="Blue";
+    <a href="SignUp.html">SignUp</a>
     return true;
        }
 else{
