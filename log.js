@@ -7,7 +7,7 @@ function validate(){
     let minNumberofChars = 8;
     let maxNumberofChars = 16;
     var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
-    if(regexp.test(email.value)){
+    if(regexp.test(email.value) || email.value==''){
         error.innerHTML = "Valid";
         error.style.color ="Blue";
         return true;
