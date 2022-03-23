@@ -13,6 +13,7 @@ body{
   justify-content: center;
   background: #5372F0;
   background-image: url(./Images_new/log.jpg);
+  background-size: cover;
 }
 ::selection{
   color: #fff;
