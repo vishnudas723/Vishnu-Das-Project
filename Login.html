@@ -28,33 +28,29 @@
         </nav>
         
 <!--End of Navigation Bars -->
-<div>
-<section id="cover" class="min-vh-100">
-<form action="index.html" class="Login" onsubmit="return validate()">
-  <div class="mb-3">
-    <h2>
-      Login Credentials
-  </h2>
-  
-    <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    <label for="error" id="error"></label>
+<form action="#">
+  <div class="field email">
+    <div class="input-area">
+      <input type="text" placeholder="Email Address">
+      <i class="icon fas fa-envelope"></i>
+      <i class="error error-icon fas fa-exclamation-circle"></i>
+    </div>
+    <div class="error error-txt">Email can't be blank</div>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
-    <label for="error1" id="passerror"></label>
+  <div class="field password">
+    <div class="input-area">
+      <input type="password" placeholder="Password">
+      <i class="icon fas fa-lock"></i>
+      <i class="error error-icon fas fa-exclamation-circle"></i>
+    </div>
+    <div class="error error-txt">Password can't be blank</div>
   </div>
-  <button type="login" class="btn btn-primary">Log In</button>
-  <br>
-  <div class="New Acc">
-    <h5>Need an Account?</h5>  
-    <a href="SignUp.html">SignUp</a>
+  <div class="pass-txt"><a href="#">Forgot password?</a></div>
+  <input type="submit" value="Login">
 </form>
-</section>
+<div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+</div>
     </header>
     <script src="log.js"></script>
-    <script src="password.js"></script>
-</body>
+   </body>
 </html>
