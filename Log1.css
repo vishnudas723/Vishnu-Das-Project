@@ -12,7 +12,7 @@ body{
   align-items: center;
   justify-content: center;
   background: #5372F0;
-  background-image: url(./Images_new/log.jpg);
+  background-image: url(./Images_new/log2.jpg);
   background-size: cover;
 }
 ::selection{
@@ -26,6 +26,9 @@ body{
   border-radius: 5px;
   text-align: center;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+    width: 100%;
+    border: 100px solid black;
 }
 .wrapper header{
   font-size: 35px;
