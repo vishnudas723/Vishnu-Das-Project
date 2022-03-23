@@ -33,7 +33,8 @@ form.onsubmit = (e)=>{
   }
 
   function checkPass(){ //checkPass function
-            if(pInput.value == "" ||  pInput.value.length < 7 || pInput.value.length > 16){ //if pass is empty then add error and remove valid class
+    let regularExpression  = /^[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+            if(pInput.value == "" ||  pInput.value.length < 7 || pInput.value.length > 16 || !pInput.value.match(regularExpression)){ //if pass is empty then add error and remove valid class
       pField.classList.add("error");
       pField.classList.remove("valid");
     }else{ //if pass is empty then remove error and add valid class
