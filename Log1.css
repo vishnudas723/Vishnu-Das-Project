@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.navbar{
+    background-color: #dc3545;
+}
 body{
   width: 100%;
   height: 100vh;
