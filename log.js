@@ -33,7 +33,7 @@ form.onsubmit = (e)=>{
   }
 
   function checkPass(){ //checkPass function
-            if(pInput.value == "" &&  pInput.length < 8 && pInput.length > 16){ //if pass is empty then add error and remove valid class
+            if(pInput.value == "" ||  pInput.length < 7 || pInput.length > 16){ //if pass is empty then add error and remove valid class
       pField.classList.add("error");
       pField.classList.remove("valid");
     }else{ //if pass is empty then remove error and add valid class
