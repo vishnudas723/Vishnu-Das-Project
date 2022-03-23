@@ -19,7 +19,7 @@ form.onsubmit = (e)=>{
   pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
 
   function checkEmail(){ //checkEmail function
-    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
+    let pattern = /^([A-Za-z0-9\.-]+)@([A-za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/; //pattern for validate email
     if(!eInput.value.match(pattern)){ //if pattern not matched then add error and remove valid class
       eField.classList.add("error");
       eField.classList.remove("valid");
@@ -42,8 +42,8 @@ form.onsubmit = (e)=>{
     }
   }
 
-  //if eField and pField doesn't contains error class that mean user filled details properly
+  
   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
-    window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
+    window.location.href = form.getAttribute("action"); 
   }
 }
