@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-image: url(./Images_new/log.jpg);
 }
 body{
   width: 100%;
@@ -13,7 +12,7 @@ body{
   align-items: center;
   justify-content: center;
   background: #5372F0;
-  background-image: .;
+  background-image: url(./Images_new/log.jpg);
 }
 ::selection{
   color: #fff;
