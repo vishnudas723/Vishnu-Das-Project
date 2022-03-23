@@ -33,9 +33,9 @@ form.onsubmit = (e)=>{
   }
 
   function checkPass(){ //checkPass function
-    let minNumberofChars = 6;
+    let minNumberofChars = 8;
     let maxNumberofChars = 16;
-        if(pInput.value == "" ||  pInput.value.minNumberofChars < 8 || pInput.value.maxNumberofChars > 16){ //if pass is empty then add error and remove valid class
+        if(pInput.value == "" ||  minNumberofChars < 8 || maxNumberofChars > 16){ //if pass is empty then add error and remove valid class
       pField.classList.add("error");
       pField.classList.remove("valid");
     }else{ //if pass is empty then remove error and add valid class
