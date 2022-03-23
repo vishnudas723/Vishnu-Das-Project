@@ -36,7 +36,7 @@ form.onsubmit = (e)=>{
     let minNumberofChars = 6;
     let maxNumberofChars = 16;
     let regularExpression  = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
-    if(pInput.value == "" ||  minNumberofChars < 8 || maxNumberofChars > 16){ //if pass is empty then add error and remove valid class
+    if(pInput.value == "" ||  minNumberofChars < 8 || maxNumberofChars > 16 || !pInput.value.match(regularExpression)){ //if pass is empty then add error and remove valid class
       pField.classList.add("error");
       pField.classList.remove("valid");
     }else{ //if pass is empty then remove error and add valid class
