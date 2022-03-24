@@ -1,48 +1,63 @@
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-const phoneNumber = document.getElementById("phoneNumber");
-const gender = document.registration;
-const language = document.getElementById("language");
-const zipcode = document.getElementById("zipcode");
-
-// function for form varification
-function formValidation() {
-  
-  // checking name length
-  if (name.value.length < 2 || name.value.length > 20) {
-    alert("Name length should be more than 2 and less than 21");
-    name.focus();
-    return false;
-  }
-  // checking email
-  if (email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
-    alert("Please enter a valid email!");
-    email.focus();
-    return false;
-  }
-  // checking password
-  if (!password.value.match(/^.{5,15}$/)) {
-    alert("Password length must be between 5-15 characters!");
-    password.focus();
-    return false;
-  }
-  // checking phone number
-  if (!phoneNumber.value.match(/^[1-9][0-9]{9}$/)) {
-    alert("Phone number must be 10 characters long number and first digit can't be 0!");
-    phoneNumber.focus();
-    return false;
-  }
-  // checking gender
-  if (gender.gender.value === "") {
-    alert("Please select your gender!");
-    return false;
-  }
-  // checking zip code
-  if (!zipcode.value.match(/^[0-9]{6}$/)) {
-    alert("Zip code must be 6 characters long number!");
-    zipcode.focus();
-    return false;
-  }
-  return true;
+body {
+  font-size: 16px;
+  background: #f9f9f9;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+form {
+  width: 300px;
+  background: #fff;
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  margin: 50px auto 0;
+  border-radius: 5px;
+}
+label {
+  display: block;
+  margin-bottom: 5px
+}
+label i {
+  color: #999;
+  font-size: 80%;
+}
+input, select {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.row {
+  padding-bottom: 10px;
+}
+.form-inline {
+  border: 1px solid #ccc;
+  padding: 8px 10px 4px;
+  border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+  display: inline-block;
+  width: auto;
+  padding-right: 15px;
+}
+.error {
+  color: red;
+  font-size: 90%;
+}
+input[type="submit"] {
+  font-size: 110%;
+  font-weight: 100;
+  background: #006dcc;
+  border-color: #016BC1;
+  box-shadow: 0 3px 0 #0165b6;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #0165b6;
 }
