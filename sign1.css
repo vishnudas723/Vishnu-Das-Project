@@ -1,37 +1,57 @@
-.flex-container {
-    display: flex;}
-  .flex-container > div {
-    width:46%;
-    margin: 0px 10px;}
-  .html-form{
-    width: 46%;
-    background: #ffffff;
-    padding: 10px;
-    border: 1px solid #015ba9;}
-  input[type="submit"]{
-    border: none;
-    background: #015ba9;
+* {
+    margin: 0
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #6699cc;
+  }
+  
+  .container h1 {
     color: white;
-    padding: 5px 35px;
-    font-size: 20px;
-    position: relative;
-    left: 11px;}
-  input[type="text"], input[type="email"], input[type="password"] {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  .registartion-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: #154a68;
+    padding: 20px;
+  }
+  
+  .registartion-form input,
+  .registartion-form select,
+  .registartion-form textarea {
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+  
+  .registartion-form input:focus,
+  .registartion-form textarea:focus {
+    box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+  }
+  
+  .registartion-form .submit {
     width: 100%;
-    height: 20px;
-    background: white;
-    border: 1px solid lightgray;
-    margin: 5px 0px;
-    padding: 5px;}
-  .html-form h3{
-    text-align: center;
-    font-size: 25px;
-    margin: 0px;
-    margin-bottom: 5px;
-    color: #015ba9;
-    border-bottom: 1px solid;
-    margin-bottom: 15px}
-  #first-name-err, #last-name-err, #email-err, #mobile-number-err, #password-err, #confirm-password-err{
-    color:red;
-    font-size:13px;
+    padding: 8px 0;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .registartion-form .submit:hover {
+    box-shadow: 3px 3px 6px rgb(255, 214, 176);
   }

@@ -35,45 +35,58 @@
 <!--End of Navigation Bars -->
 
 <!--SignUp Form -->
-<div class="html-form">
-  <h3>How to Validate Form Using JavaScript</h3>
-<form method="post" id="registrationForm">
-  <div class="flex-container">
-  <div>
-      <input type="text" id="firstName" placeholder="First Name">
-      <div id="first-name-err"></div>
-  </div>
-  
-  <div>
-     <input type="text" id="lastName" placeholder="Last Name Name">
-     <div id="last-name-err"></div>
-  </div>
-</div>
-  
-  <div class="flex-container">
-  <div>
-       <input type="email" id="emailAddress" placeholder="Email Address">
-       <div id="email-err"></div>
-  </div>
-<div>
-  <input type="text" id="mobileNumber" placeholder="Mobile Nubmer">
-  <div id="mobile-number-err"></div>
-  </div>
-     
-</div>
- <div class="flex-container">
-  <div>
-  <input type="password" id="password" placeholder="Password">
-  <div id="password-err"></div>
-  </div>
-     
-  <div>
-      <input type="password" id="confirmPassword" placeholder="Confirm Password">
-      <div id="confirm-password-err"></div>
-  </div>
-  </div>
-<input type="submit">
-</form>
+<div class="container">
+  <h1>HTML registration form with varification</h1>
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="your name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password"></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>Male: <input type="radio" name="gender" value="male">
+          Female: <input type="radio" name="gender" value="female">
+          Other: <input type="radio" name="gender" value="other"></td>
+      </tr>
+      <tr>
+        <td><label for="language">language</label></td>
+        <td>
+          <select name="language" id="language">
+            <option value="">Select language</option>
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Russian">Russian</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="zipcode">Zip Code:</label></td>
+        <td><input type="number" name="zipcode" id="zipcode"></td>
+      </tr>
+      <tr>
+        <td><label for="about">About:</label></td>
+        <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+      </tr>
+    </table>
+  </form>
 </div>
 
   <!--End Of SignUp Form -->  
