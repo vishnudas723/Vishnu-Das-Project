@@ -3,12 +3,12 @@
   }
   
   .container {
-    
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #6699cc;
+    background-image: url(./Images_new/log2.jpg);;
   }
   
   .container h1 {
