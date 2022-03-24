@@ -8,6 +8,15 @@
     padding-top: 33%;
     margin-right: 2%;
     margin-left: 2%;
+    width: 380px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+    width: 100%;
+    border: 100px solid black;
 }
 ::selection{
   color: #fff;
