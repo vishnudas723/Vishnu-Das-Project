@@ -4,7 +4,7 @@
     padding: 0; 
 
     }
-    #cover {
+    /* #cover {
         background-image: url(./Images_new/I3.jpg);
         background-size: cover;
         height: 100%;
@@ -12,7 +12,7 @@
         align-items: center;
         position: relative;
         padding-top: 5%;
-    }
+    }-->*/
     .copyright {
         
         color: black;
