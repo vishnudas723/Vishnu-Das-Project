@@ -4,7 +4,11 @@
   padding: 0;
 
 }
-
+.content{
+    padding-top: 33%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
 ::selection{
   color: #fff;
   background: #5372F0;
