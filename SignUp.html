@@ -35,46 +35,44 @@
 <!--End of Navigation Bars -->
 
 <!--SignUp Form -->
-<h1 style="text-align: center;">REGISTRATION FORM</h1>
-<form name="RegForm" action="Login.html" 
-      onsubmit="return GEEKFORGEEKS()" method="post">
-    <p>Name: <input type="text" 
-                    size="65" name="Name" /></p>
-    <br />
-    <p>Address: <input type="text" 
-                       size="65" name="Address" /></p>
-    <br />
-    <p>E-mail Address: <input type="text" 
-                           size="65" name="EMail" /></p>
-    <br />
-    <p>Password: <input type="text" 
-                        size="65" name="Password" /></p>
-    <br />
-    <p>Telephone: <input type="text" 
-                         size="65" name="Telephone" /></p>
-    <br />
+<div class="container">
+  <h2>Sign Up</h2>
 
-    <p>
-        SELECT YOUR COURSE
-        <select type="text" value="" name="Subject">
-            <option>BTECH</option>
-            <option>BBA</option>
-            <option>BCA</option>
-            <option>B.COM</option>
-            <option>GEEKFORGEEKS</option>
-        </select>
-    </p>
-    <br />
-    <br />
-    <p>Comments: <textarea cols="55" 
-                           name="Comment"> </textarea></p>
-    <p>
-        <input type="submit" 
-               value="send" name="Submit" />
-        <input type="reset" 
-               value="Reset" name="Reset" />
-    </p>
-</form>
+  <form action="">
+      <div class="form-item-username">
+          <input type="text" name="firstName" id="firstName" placeholder="First Name">
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+      </div>
+
+      <div class="form-item">
+          <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+
+      <div class="form-item">
+          <!-- add a password format display -->
+          <span class="pwd-format">
+              8-15 AlphaNumeric Characters
+          </span>
+          <input type="password" name="password" id="password" placeholder="Enter password">
+          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+      </div>
+
+      <div class="accept-box">
+          <input type="checkbox" name="accept" id="accept">
+          <p>I accept the <a href="#">Terms & Conditions</a></p>
+      </div>
+
+      <div class="form-btns">
+          <button class="signup" type="submit" disabled>Sign Up</button>
+          <div class="options">
+              Already hav an account? <a href="#">Login here</a>
+          </div>
+      </div>
+
+  </form>
+  <p>Copyright &copy; yourwebsite.com</p>
+</div>
+
   <!--End Of SignUp Form -->  
   <footer class="footer">
     <div class="footerContainer">
