@@ -1,48 +1,53 @@
-function GEEKFORGEEKS() {
-  var name = document.forms["RegForm"]["Name"];
-  var email = document.forms["RegForm"]["EMail"];
-  var phone = document.forms["RegForm"]["Telephone"];
-  var what = document.forms["RegForm"]["Subject"];
-  var password = document.forms["RegForm"]["Password"];
-  var address = document.forms["RegForm"]["Address"];
+const signup = document.querySelector(".signup");
+        const termCond = document.querySelector("#accept");
+        const password = document.querySelector("#password");
+        const confirmPassword = document.querySelector("#confirmPassword");
+        const pwd_format = document.querySelector(".pwd-format");
+        // lets define a password format
+        // The password should contain around 8-15 alhpanumeric character
 
-  if (name.value == "") {
-      window.alert("Please enter your name.");
-      name.focus();
-      return false;
-  }
+        const passwordPattern = /^[a-zA-Z0-9]{8,15}$/
 
-  if (address.value == "") {
-      window.alert("Please enter your address.");
-      address.focus();
-      return false;
-  }
+        password.addEventListener('focusin', () => {
+            pwd_format.style.display = 'block';
 
-  if (email.value == "") {
-      window.alert(
-        "Please enter a valid e-mail address.");
-      email.focus();
-      return false;
-  }
+            // now lets check the password entered by the user
+            password.addEventListener('keyup', () => {
+                if (passwordPattern.test(password.value)) {
+                    password.style.borderColor = 'green' // if password pattern matches the border of password input will ne green
+                    pwd_format.style.color = 'green'
+                } else {
+                    password.style.borderColor = 'red'
+                    pwd_format.style.color = 'red'
+                }
+            })
+        })
 
-  if (phone.value == "") {
-      window.alert(
-        "Please enter your telephone number.");
-      phone.focus();
-      return false;
-  }
+        password.addEventListener('focusout', () => {
+            pwd_format.style.display = 'none';
+        })
 
-  if (password.value == "") {
-      window.alert("Please enter your password");
-      password.focus();
-      return false;
-  }
+        confirmPassword.addEventListener('focusin', () => {
+            pwd_format.style.display = 'block';
+            confirmPassword.addEventListener('keyup', () => {
+                if (passwordPattern.test(confirmPassword.value) && password.value === confirmPassword.value) {
+                    confirmPassword.style.borderColor = 'green' // if password pattern matches the border of password input will ne green
+                    pwd_format.style.color = 'green'
+                } else {
+                    confirmPassword.style.borderColor = 'red'
+                    pwd_format.style.color = 'red'
+                }
+            })
+        })
 
-  if (what.selectedIndex < 1) {
-      alert("Please enter your course.");
-      what.focus();
-      return false;
-  }
+        confirmPassword.addEventListener('focusout', () => {
+            pwd_format.style.display = 'none';
+        })
 
-  return true;
-}
+        termCond.addEventListener('change', () => {
+            if (termCond.checked === true) {
+                signup.disabled = false;
+            } else if (termCond.checked === false) {
+                signup.disabled = true;
+            }
+        })
