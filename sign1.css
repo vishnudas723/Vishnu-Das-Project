@@ -13,13 +13,6 @@
         position: relative;
         padding-top: 5%;
     }-->*/
-    .copyright {
-        
-        color: black;
-        line-height: 20px;
-        font-size: 1em;
-        margin-left: 50%;
-    }
 
     .container {
         background: honeydew;
@@ -140,4 +133,11 @@
         right: -81px;
         z-index: 2;
         display: none;
+    }
+    .copyright {
+        
+        color: black;
+        line-height: 20px;
+        font-size: 1em;
+        margin-left: 50%;
     }
