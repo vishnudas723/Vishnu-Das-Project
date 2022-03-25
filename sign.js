@@ -49,10 +49,7 @@ form.onsubmit = (e)=>{
 
   function checkname(){ //checkEmail function
       if(!nInput.value==""){ //if pattern not matched then add error and remove valid class
-      nField.classList.add("error");
-      nField.classList.remove("valid");
-      let errorTxt = nField.querySelector(".error-txt");
-      //if email value is not empty then show please enter valid email else show Email can't be blank
+       //if email value is not empty then show please enter valid email else show Email can't be blank
       (nInput.value != "") ? errorTxt.innerText = "Enter a valid name" : errorTxt.innerText = "Name can't be blank";
     }else{ //if pattern matched then remove error and add valid class
       nField.classList.remove("error");
