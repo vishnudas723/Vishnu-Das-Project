@@ -3,6 +3,10 @@ eField = form.querySelector(".email"),
 eInput = eField.querySelector("input"),
 pField = form.querySelector(".password"),
 pInput = pField.querySelector("input");
+nField = form.querySelector(".name"),
+nInput = nField.querySelector("input"),
+mField = form.querySelector(".phone"),
+mInput = mField.querySelector("input");
 
 form.onsubmit = (e)=>{
   e.preventDefault(); //preventing from form submitting
@@ -40,6 +44,19 @@ form.onsubmit = (e)=>{
     }else{ //if pass is empty then remove error and add valid class
       pField.classList.remove("error");
       pField.classList.add("valid");
+    }
+  }
+
+  function checkname(){ //checkEmail function
+      if(!nInput.value==""){ //if pattern not matched then add error and remove valid class
+      nField.classList.add("error");
+      nField.classList.remove("valid");
+      let errorTxt = nField.querySelector(".error-txt");
+      //if email value is not empty then show please enter valid email else show Email can't be blank
+      (nInput.value != "") ? errorTxt.innerText = "Enter a valid name" : errorTxt.innerText = "Name can't be blank";
+    }else{ //if pattern matched then remove error and add valid class
+      nField.classList.remove("error");
+      nField.classList.add("valid");
     }
   }
 
